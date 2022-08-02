@@ -23,9 +23,6 @@ while True:
 
     updated_video = np.where(f==0 , image , f)
 
-    # cv2.imshow("Frame" , frame)
-    # cv2.imshow("Mask" , mask)
-    # cv2.imshow("Res", res)
     cv2.imshow("Updated_Video", updated_video)
     k = cv2.waitKey(1)
     if k == ord('q'):
